@@ -7,16 +7,124 @@
     <title>Fashion Driven</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="ArquivosUteis/Logo.png">
     </header>
     <div class="personalization">
-        <div class="choices"></div>
-        <div class="illustration"><img src="ArquivosUteis/ilustração.png"></div>        
+        <div class="choices">
+            <div class="division">
+                <div class="textChoice">Escolha o modelo</div>
+                <div class="model">  
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/tshirt.png">
+                    </div>
+                    <div class="textChoice align margin">T-shirt</div>
+                </div>                                
+                    
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/Camiseta.png">
+                    </div>
+                    <div class="textChoice align margin">Camiseta</div>
+                </div>
+                    
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/Mangalonga.png">
+                    </div>
+                    <div class="textChoice align margin">Manga Longa</div>
+                </div>
+                    
+                </div>
+                <div class="textChoice">Escolha a gola</div>
+                <div class="collar">    
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/GolaV.png">
+                    </div>
+                    <div class="textChoice align margin">Gola V</div>
+                </div>               
+                    
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/GolaRedonda.png">
+                    </div>
+                    <div class="textChoice align margin">Gola redonda</div>
+                </div> 
+                    
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/GolaPolo.png">
+                    </div>
+                    <div class="textChoice align margin">Gola Polo</div>
+                </div> 
+                    
+                </div>
+                <div class="textChoice">Escolha o tecido</div>
+                <div class="tissue">     
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/Seda.png">
+                    </div>
+                    <div class="textChoice align margin">Seda</div>
+                </div>         
+                         
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/Algodão.png">
+                    </div>
+                    <div class="textChoice align margin">Algodão</div>
+                </div>
+
+                    <div onclick="selecection(this)" class="division2"><div class="backgroundGrey">
+                        <img src="ArquivosUteis/Poliester.png">
+                    </div>
+                    <div class="textChoice align margin">Poliéster</div>
+                </div>                  
+            </div>
+            <div class="textChoice">Imagem de referência</div> 
+                <input type="url" placeholder="Insira o link"> 
+                <div class="confirm align">Confimar pedido</div>                
+                </div>
+        </div>
+        <div class="ilustration"><img src="ArquivosUteis/ilustração.png"></div>
     </div>
-    <div class="lastOrders">teste</div>
-    <script src="java.js"></script>
+    <div class="lastOrders">        
+        <div class="division3">
+            <div class="text">Últimos pedidos</div>
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div>
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div>
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>Julia</div>
+            </div>
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div>
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div> 
+            <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div> <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div> <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div> <div class="item">
+                <img src="ArquivosUteis/Blusa1.png">
+                <div class="textOrders"><div class="weight">Criador:</div>>Julia</div>
+            </div>            
+        </div>
+    </div>
+    <script src="java.js"></script>    
 </body>
 </html>
