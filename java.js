@@ -51,8 +51,8 @@ function sendRequest(){
     informacoesRoupa();
     if(verificarBotao != null){
         const requisicao = axios.post('https://mock-api.driven.com.br/api/v4/shirts-api/shirts', objetoUsuario);
-        requisicao.then(tratarSucesso);
-        requisicao.catch(tratarError);
+        requisicao.then(tratarSucesso1);        
+        requisicao.catch(tratarError1);        
     } 
    }
 function informacoesRoupa(){
@@ -96,6 +96,13 @@ function tratarSucesso(){
 function tratarError(){
     alert("Ops, não conseguimos processar sua encomenda");
 }
+function tratarSucesso1(){
+    atualizaItens();
+    alert("Sua encomenda foi solicitada!");
+}
+function tratarError1(){
+    alert("Ops, não conseguimos processar sua encomenda");
+}
 function pegarencomendas(){
     let encomendas = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
     encomendas.then((resposta)=>{
@@ -128,4 +135,9 @@ function selecionarItem(dono,link,modelo,gola, material){
         requisicao.catch(tratarError);
     }    
     
+}
+function atualizaItens(){
+    let ultimosPedidos = document.querySelector(".ultimosPedidos");
+    ultimosPedidos.innerHTML = '';
+    pegarencomendas();
 }
