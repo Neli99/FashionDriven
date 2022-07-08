@@ -22,7 +22,6 @@ header img{
 /*Personalização*/
 .personalization{
     width: 100vw;
-    /*height: 90vh;*/
     display: flex;
 }
 .choices{
@@ -34,7 +33,6 @@ header img{
 }
 .division{
     width: 57%;
-    /*height: 20%;*/
     display: flex;
     flex-direction: column;
 }
@@ -108,7 +106,6 @@ input{
 .lastOrders{
     width: 100vw;
     background-color: #F2F2F2;
-    /*height: 28vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +140,7 @@ input{
     font-size: 18px;
     color: #232323;
     display: flex;
+    margin-top: 5px;
 }
 .text{
     width: 100%;
@@ -155,7 +153,12 @@ input{
     font-weight: 700;
 }
 .ultimosPedidos{
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 17px;
+    row-gap: 17px;
 }
 /*Fim dos últimos pedidos*/
 /*Seleção*/
@@ -197,6 +200,10 @@ input{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .ultimosPedidos{
+        display: flex;
+        flex-direction: column;     
     }
 
 }
