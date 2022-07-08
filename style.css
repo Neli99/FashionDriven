@@ -159,6 +159,9 @@ input{
 .borderBlue{
     border: solid 3px #404EED;
 } 
+.buttonBlue{
+    background-color: #404EED;
+}
 /*Fim de seleção*/
 
 @media (max-width: 850px) {
