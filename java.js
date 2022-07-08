@@ -7,10 +7,7 @@ let userLink;
 let modelo = ["t-shirt","long","top-tank"];
 let gola = ["v-neck","round","polo"];
 let tecido = ["silk","cotton","polyester"];
-/*let modeloDom = document.querySelector(".model .borderBlue");   
-let golaDom = document.querySelector(".collar .borderBlue");  
-let tecidoDom = document.querySelector(".tissue .borderBlue");
-let confirmacao = document.querySelector(".confirm");*/
+
 let x;
 let y;
 let z;
@@ -33,7 +30,6 @@ function selecection(itemSelected){
         }
     }
     variavel.classList.add("borderBlue");
-    //verification();
 }
 //Fim da função que seleciona
 
@@ -93,7 +89,6 @@ function informacoesRoupa(){
 	"owner": username,
 	"author": username
     }
-    console.log(objetoUsuario);
 }
 function tratarSucesso(){
     alert("Sua encomenda foi solicitada!");
@@ -118,15 +113,19 @@ function renderizarUltimasEncomendas(encomendas){
     })
 }
 function selecionarItem(dono,link,modelo,gola, material){
-    let encomendaClicada = {
-		model: modelo,
-		neck: gola,
-		material: material,
-		image: link,
-		owner: dono,
-		author: username
-    }
-    const requisicao = axios.post('https://mock-api.driven.com.br/api/v4/shirts-api/shirts', encomendaClicada);
-    requisicao.then(tratarSucesso);
-    requisicao.catch(tratarError);
+    let respostaDoUsuario = confirm("Você tem certeza que deseja escolhar essa blusa?");
+    if(respostaDoUsuario === true){
+        let encomendaClicada = {
+            model: modelo,
+            neck: gola,
+            material: material,
+            image: link,
+            owner: dono,
+            author: username
+        }
+        const requisicao = axios.post('https://mock-api.driven.com.br/api/v4/shirts-api/shirts', encomendaClicada);
+        requisicao.then(tratarSucesso);
+        requisicao.catch(tratarError);
+    }    
+    
 }
