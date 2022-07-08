@@ -154,6 +154,9 @@ input{
 .weight{
     font-weight: 700;
 }
+.ultimosPedidos{
+    display: flex;    
+}
 /*Fim dos últimos pedidos*/
 /*Seleção*/
 .borderBlue{
