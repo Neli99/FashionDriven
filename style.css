@@ -155,7 +155,7 @@ input{
 .ultimosPedidos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     column-gap: 17px;
     row-gap: 17px;
