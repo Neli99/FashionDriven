@@ -99,6 +99,7 @@ function tratarError(){
 function tratarSucesso1(){
     atualizaItens();
     alert("Sua encomenda foi solicitada!");
+    reiniciarPersonalizacao();
 }
 function tratarError1(){
     alert("Ops, não conseguimos processar sua encomenda");
@@ -140,4 +141,17 @@ function atualizaItens(){
     let ultimosPedidos = document.querySelector(".ultimosPedidos");
     ultimosPedidos.innerHTML = '';
     pegarencomendas();
+}
+function reiniciarPersonalizacao(){
+    let reiniciarModelo = document.querySelectorAll(".model .division2 .backgroundGrey");
+    let reiniciarGola = document.querySelectorAll(".collar .division2 .backgroundGrey");
+    let reiniciarTecido = document.querySelectorAll(".tissue .division2 .backgroundGrey");
+    for(let i=0;i<3;i++){
+        reiniciarModelo[i].classList.remove("borderBlue");
+        reiniciarGola[i].classList.remove("borderBlue");
+        reiniciarTecido[i].classList.remove("borderBlue");
+    }
+    let input = document.querySelector("input");
+    input.value = "";    
+    userLink = "";     
 }
